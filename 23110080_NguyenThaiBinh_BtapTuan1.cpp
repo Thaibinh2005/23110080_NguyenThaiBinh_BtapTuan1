@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//ham suy luan
+//may suy luan
 void Meal(string meal, string meal_c){
     if( meal == "Buoi sang"){
         if(meal_c == "khong"){
@@ -23,6 +23,7 @@ int main(){
     cout << "1. Buoi sang, 2. Buoi trua , 3. Buoi chieu\n";
     cout << "Nhap lua chon (1-3)\n";
     cin >> c;
+    //co so tri thuc
     if (c == 1){
         meal = "Buoi sang";
         cout << "Ban co doi lam khong?(co,khong)\n";
