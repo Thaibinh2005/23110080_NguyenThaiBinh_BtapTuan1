@@ -1,6 +1,7 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
+//ham suy luan
 void Meal(string meal, string meal_c){
     if( meal == "Buoi sang"){
         if(meal_c == "khong"){
@@ -40,6 +41,6 @@ int main(){
     }
 
     Meal (meal, meal_c);
-    cout<<"<Da xu ly xong, chuc ban an ngon mieng>\n";
+    cout<<"<Da chon xong, chuc ban an ngon mieng>\n";
     return 0;
 }
