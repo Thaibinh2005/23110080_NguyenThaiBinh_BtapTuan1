@@ -1,9 +1,11 @@
 #include<iostream>
 using namespace std;
 
-void ChooseMeal(string meal, string meal_c){
+void Meal(string meal, string meal_c){
     if( meal == "Buoi sang"){
-        cout << "Nen an bun, tacos hoac banh mi\n" ;
+        if(meal_c == "khong"){
+            cout << "Nhin doi\n" ;
+        }else cout << "Nen an mon nuoc, banh mi hoac banh bao\n"; 
     }else if (meal == "Buoi trua" && meal_c == "co"){
         cout << "Nen an com no\n";
     }else if (meal =="Buoi toi" && meal_c == "co"){
@@ -22,7 +24,8 @@ int main(){
     cin >> c;
     if (c == 1){
         meal = "Buoi sang";
-        meal_c = "co";
+        cout << "Ban co doi lam khong?(co,khong)\n";
+        cin >> meal_c;
     }else if (c == 2){
         meal = "Buoi trua";
         cout << "Ban co doi lam khong?(co,khong)\n";
@@ -36,7 +39,7 @@ int main(){
         return 0;
     }
 
-    ChooseMeal (meal, meal_c);
+    Meal (meal, meal_c);
     cout<<"<Da xu ly xong, chuc ban an ngon mieng>\n";
     return 0;
 }
